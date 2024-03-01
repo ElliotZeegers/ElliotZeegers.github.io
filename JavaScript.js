@@ -27,6 +27,7 @@ function colorChanger(){
         iconColor.style.color = "white";
         checker = false;
     }
+    transitionDuration();
 }
 
 function colorChangerExtra(){
@@ -55,6 +56,7 @@ function colorChangerExtra(){
         }
         checker = false;
     }
+    transitionDuration();
 }
 
 function colorChangerIndex(){
@@ -73,4 +75,14 @@ function colorChangerIndex(){
         iconColor.style.color = "white";
         checker = false;
     }
+    transitionDuration();
+}
+
+function transitionDuration(){
+    document.getElementById("kleur").style.transitionDuration = "0.6s";
+    document.getElementById("navigatie").style.transitionDuration = "0.6s";
+    document.getElementById("navlinktext").style.transitionDuration = "0.6s";
+    document.getElementById("balk").style.transitionDuration = "0.6s";
+    document.getElementById("iconColor").style.transitionDuration = "0.6s";
+    document.getElementById("card").style.transitionDuration = "0.6s";
 }
