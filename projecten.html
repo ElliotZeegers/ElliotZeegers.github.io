@@ -19,8 +19,8 @@
 
     <nav id="navigatie" class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid justify-content-center" style="margin-left: 64px;">
-        <button class="navbar-toggler text-white bg-white text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler text-white bg-white text-center" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse text-center" id="navbarNav">
@@ -46,14 +46,15 @@
               </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-secondary px-4" href="contact.html">
-                  <h5>Contact</h5>
-                </a>
-              </li>
+              <a class="nav-link text-secondary px-4" href="contact.html">
+                <h5>Contact</h5>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
-      <i id="iconColor" onclick="colorChangerExtra()" class="bi bi-brightness-high-fill" style="margin-right: 34px; font-size:30px;"></i>
+      <i id="iconColor" onclick="colorChangerExtra()" class="bi bi-brightness-high-fill"
+        style="margin-right: 34px; font-size:30px;"></i>
     </nav>
 
   </header>
@@ -62,6 +63,16 @@
 
   <div class="container-fluid">
     <div class="row row-cols-auto justify-content-center align-items-center px-5">
+      <div class="col pl-5 pt-5 text-center d-flex">
+        <div class="card">
+          <img src="KaperKroniekenCard.png" class="card-img-top" alt="RPG game">
+          <div class="card-body">
+            <h4 class="card-text">KaperKronieken</h4>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#RPGGameModal">Lees
+              meer!</button>
+          </div>
+        </div>
+      </div>
       <div class="col pl-5 pt-5 text-center d-flex">
         <div class="card">
           <img src="textadventure.png" class="card-img-top" alt="textadventure">
@@ -98,10 +109,71 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <script src="JavaScript.js"></script>
+      <div class="modal fade" id="RPGGameModal" tabindex="-1" aria-labelledby="RPGGameModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="RPGGameModalModalLabel">KaperKronieken</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sluiten"></button>
+            </div>
+            <div class="modal-body">
+
+              <img src="BattleScreenShot.png" class="img-fluid w-100 mb-4" alt="Text Adventure Screenshot">
+
+              <p class="mb-4">(In de afbeelding hierboven is een battle te zien)</p>
+
+              <p class="mb-4">
+                KaperKronieken is een 2D-spel waarin de speler het opneemt tegen vijanden in een gevechtssysteem dat
+                sterk lijkt op dat van een klassiek RPG spel. Dit project is ontwikkeld voor de opdracht reusable
+                components, waarbij herbruikbaarheid van code centraal stond. Zowel de vijanden als de speler maken
+                tijdens de gevechten gebruik van herbruikbare componenten.
+                Bij het ontwikkelen van dit spel heb ik geprobeerd te programmeren volgens het S.O.L.I.D.-principe, wat
+                zorgt voor een goed gestructureerde en uitbreidbare codebasis. Enkele voorbeelden van herbruikbare
+                componenten zijn: Health, TargetEntity, Shield.
+                Naast de gevechten is er ook een overworld waarin je vrij kunt rondlopen. Tijdens het verkennen kun je
+                vijanden tegenkomen. Zodra je in de buurt van een vijand komt, zal deze je opmerken en achter je aan
+                gaan. Word je gepakt? Dan beland je direct in een battle.
+              </p>
+
+              <p class="mb-4">(In de afbeelding hieronder is de overworld te zien)</p>
+
+              <img src="OverworldScreenShot.png" class="img-fluid mb-4" alt="Voorbeeld van gameplay">
+
+              <h3>Code</h3>
+              <h4>Positie van spelers voor een battle</h4>
+              <img src="PosPriorityScript.png" class="img-fluid mb-4" alt="Voorbeeld van gameplay">
+              <p>Bovenstaand script wordt op een leeg GameObject gezet. Daarna kun je in de Inspector aangeven welk type het is: 
+                een spawn voor een speler of voor een enemy. Ook kun je aangeven hoe belangrijk die plek is met priority (zie afbeelding hieronder). 
+                De speler heeft ook een int die BattlePriority heet. 
+                Zo wordt de speler met de hoogste priority op de plek met de hoogste priority gezet.
+                </p>
+              <img src="InspectorSpawn.png" class="img-fluid mb-4" alt="Voorbeeld van gameplay">
+              <p>Het script hieronder sorteert de spawnposities en de entiteiten, en plaatst ze vervolgens op de juiste manier zodat ze op de correcte plek komen te staan.</p>
+              <img src="BattlePosManagerScript.png" class="img-fluid mb-4" alt="Voorbeeld van gameplay">
+
+              <h4>Herbruikbaar component voorbeeld</h4>
+              <img src="HealthScript.png" class="img-fluid mb-4" alt="Voorbeeld van gameplay">
+              <p>Het script hierboven is een voorbeeld van een component die vaker wordt hergebruikt. Het is een vrij simpel script,
+                 eigenlijk is het enige wat het doet een healthbar instantiëren en daarna wordt hij gebruikt om de healthbar te updaten als de entiteit damage krijgt.
+                </p>
+                
+                <h4>Video met gameplay</h4>
+              <video controls class="w-100 mb-4">
+                <source src="KaperKroniekenGameplay.mp4" type="video/mp4">
+              </video>
+
+
+              <a href="KaperKroniekenFinalBuild.zip" class="btn btn-success" download>
+                <i class="bi bi-download me-2"></i>Download project
+              </a>
+              <a href="https://github.com/ElliotZeegers/RPGBattleGame" class="btn btn-primary">Bekijk het op github!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="JavaScript.js"></script>
 </body>
 
 </html>
