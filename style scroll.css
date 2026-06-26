@@ -1,0 +1,23 @@
+.row {
+    word-wrap: break-word
+}
+
+.bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: #262626;
+}
+
+#balk {
+    background-color: #F8F9FA;
+}
+
+#iconColor {
+    color: white;
+}
