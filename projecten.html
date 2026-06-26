@@ -61,54 +61,109 @@
 
   <h1 id="balk" class="text-center py-3 border-bottom border-2">Projecten</h1>
 
-  <div class="container-fluid">
-    <div class="row row-cols-auto justify-content-center align-items-center px-5">
-      <div class="col pl-5 pt-5 text-center d-flex">
-        <div class="card">
-          <img src="KaperKroniekenCard.png" class="card-img-top" alt="RPG game">
-          <div class="card-body">
-            <h4 class="card-text">KaperKronieken</h4>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#RPGGameModal">Lees
-              meer!</button>
+  <div class="container-fluid mt-4">
+    <div class="d-flex justify-content-center gap-3 flex-wrap mb-4">
+      <a href="#unity-projecten" class="btn btn-outline-primary">Unity & C#</a>
+      <a href="#blender-projecten" class="btn btn-outline-info">Blender</a>
+      <a href="#overige-projecten" class="btn btn-outline-warning text-dark">Overige</a>
+    </div>
+  </div>
+
+  <!-- Unity Projecten -->
+  <div class="container-fluid mt-5" id="unity-projecten">
+    <div class="project-section p-4 rounded-4 border border-2" style="background-color: #f7f9fb;">
+      <div class="text-center mb-4">
+        <span class="badge bg-primary mb-3">Unity & C#</span>
+        <h2 class="mb-0" style="color: #343a40;">Unity en C# projecten</h2>
+        <p class="text-muted">Projecten gemaakt met Unity en C#</p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 justify-content-center px-3">
+        <div class="col d-flex">
+          <div class="card shadow-sm w-100">
+            <img src="KaperKroniekenCard.png" class="card-img-top" alt="RPG game">
+            <div class="card-body text-center">
+              <h4 class="card-title">KaperKronieken</h4>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#RPGGameModal">Lees meer</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col pl-5 pt-5 text-center d-flex">
-        <div class="card">
-          <img src="textadventure.png" class="card-img-top" alt="textadventure">
-          <div class="card-body">
-            <h4 class="card-text">Text adventure project</h4>
-            <a href="https://github.com/ElliotZeegers" class="btn btn-primary">Bekijk het!</a>
+    </div>
+  </div>
+
+  <!-- Blender Projecten -->
+  <div class="container-fluid mt-5" id="blender-projecten">
+    <div class="project-section p-4 rounded-4 border border-2" style="background-color: #eef7ff;">
+      <div class="text-center mb-4">
+        <span class="badge bg-info mb-3">Blender</span>
+        <h2 class="mb-0" style="color: #343a40;">Blender Projecten</h2>
+        <p class="text-muted">Modelleerwerk en animaties.</p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 justify-content-center px-3">
+        <div class="col d-flex">
+          <div class="card shadow-sm w-100">
+            <img src="BlenderAfbeeldingen/PiratenSchip.png" class="card-img-top" alt="Blender project 1">
+            <div class="card-body text-center">
+              <h4 class="card-title">Piratenschip model</h4>
+              <button type="button" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#BlenderModal1">Lees meer</button>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex">
+          <div class="card shadow-sm w-100">
+            <img src="BlenderAfbeeldingen/Omgeving1.png" class="card-img-top" alt="Blender project 2">
+            <div class="card-body text-center">
+              <h4 class="card-title">Omgeving namaken</h4>
+              <button type="button" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#BlenderModal2">Lees meer</button>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex">
+          <div class="card shadow-sm w-100">
+            <img src="BlenderAfbeeldingen/Skelet1.png" class="card-img-top" alt="Blender project 3">
+            <div class="card-body text-center">
+              <h4 class="card-title">Skelet model</h4>
+              <button type="button" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#BlenderModal3">Lees meer</button>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex">
+          <div class="card shadow-sm w-100">
+            <img src="BlenderAfbeeldingen/Kanon1.png" class="card-img-top" alt="Blender project 4">
+            <div class="card-body text-center">
+              <h4 class="card-title">Kanon model</h4>
+              <button type="button" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#BlenderModal4">Lees meer</button>
+            </div>
+          </div>
+        </div>
+         <div class="col d-flex">
+          <div class="card shadow-sm w-100">
+            <img src="BlenderAfbeeldingen/Pokemon1.png" class="card-img-top" alt="Blender project 5">
+            <div class="card-body text-center">
+              <h4 class="card-title">Pokemon model namaken</h4>
+              <button type="button" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#BlenderModal5">Lees meer</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col pl-5 pt-5 text-center d-flex">
-        <div class="card">
-          <img src="PirateTroveTussle_Screenshot.jpg" class="card-img-top" alt="PirateTroveTussle_Screenshot">
-          <div class="card-body">
-            <h4 class="card-text">Microgame project</h4>
-            <a href="https://github.com/ElliotZeegers" class="btn btn-primary">Bekijk het!</a>
-          </div>
+    </div>
+  </div>
+
+  <!-- Overige Projecten -->
+  <div class="container-fluid mt-5 mb-5" id="overige-projecten">
+    <div class="project-section p-4 rounded-4 border border-2" style="background-color: #fff7e6;">
+      <div class="text-center mb-4">
+        <span class="badge bg-warning text-dark mb-3">Overig</span>
+        <h2 class="mb-0" style="color: #343a40;">Overige Projecten / opdrachten</h2>
+        <p class="text-muted">Andere opdrachten, tools en kleine experimenten.</p>
+      </div>
+      <div class="row justify-content-center px-3">
+        <div class="col-12 text-center py-5">
+          <p class="text-muted mb-0">Nog geen projecten toegevoegd</p>
         </div>
       </div>
-      <div class="col pl-5 pt-5 text-center d-flex">
-        <div class="card">
-          <img src="platformer.png" class="card-img-top" alt="platformer">
-          <div class="card-body">
-            <h4 class="card-text">2D platformer</h4>
-            <a href="https://github.com/ElliotZeegers" class="btn btn-primary">Bekijk het!</a>
-          </div>
-        </div>
-      </div>
-      <div class="col pl-5 pt-5 text-center d-flex">
-        <div class="card">
-          <img src="arcadegame.png" class="card-img-top" alt="arcadegame">
-          <div class="card-body">
-            <h4 class="card-text">Arcade game</h4>
-            <a href="https://github.com/ElliotZeegers" class="btn btn-primary">Bekijk het!</a>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
 
       <div class="modal fade" id="RPGGameModal" tabindex="-1" aria-labelledby="RPGGameModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -168,6 +223,102 @@
                 <i class="bi bi-download me-2"></i>Download project
               </a>
               <a href="https://github.com/ElliotZeegers/RPGBattleGame" class="btn btn-primary">Bekijk het op github!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="BlenderModal1" tabindex="-1" aria-labelledby="BlenderModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="BlenderModal1Label">Piratenschip</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sluiten"></button>
+            </div>
+            <div class="modal-body">
+              <img src="BlenderAfbeeldingen/PiratenSchip.png" class="img-fluid w-100 mb-4" alt="Schip zijkant">
+              <img src="BlenderAfbeeldingen/PiratenSchip2.png" class="img-fluid w-100 mb-4" alt="Schip achterkant">
+              <img src="BlenderAfbeeldingen/SchipBoven.png" class="img-fluid w-100 mb-4" alt="Schip binnen">
+              <img src="BlenderAfbeeldingen/SchipKelder.png" class="img-fluid w-100 mb-4" alt="Schip kelder">
+              <p class="mb-4">Dit piratenschip heb ik gemaakt voor een project op school. 
+                We waren samen een piraten game aan het ontwikkelen en het was mijn taak om het schip te modelleren en textureren. 
+                Ik heb eerst de vorm van het schip gemaakt en ben later verder gegaan met de binnenkant. 
+                De gameplay van het spel speelde zich vooral af binnen het schip en niet zo zeer op het dek. 
+                In Unity hebben wij interieur toegevoegd in het schip, zoals een kanon die ook op mijn pagina staat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="BlenderModal2" tabindex="-1" aria-labelledby="BlenderModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="BlenderModal2Label">Omgeving</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sluiten"></button>
+            </div>
+            <div class="modal-body">
+              <img src="BlenderAfbeeldingen/Omgeving1.png" class="img-fluid w-100 mb-4" alt="omgeving1">
+              <img src="BlenderAfbeeldingen/Omgeving2.png" class="img-fluid w-100 mb-4" alt="omgeving2">
+              <img src="BlenderAfbeeldingen/Gebouw.png" class="img-fluid w-100 mb-4" alt="gebouw">
+              <p class="mb-4">Voor een eerdere stage heb ik een omgeving nagebouwd die gebaseerd is op een echte locatie. 
+                Het gebied dat ik na wilde maken is te zien in de afbeelding hieronder.</h4>
+                <img src="BlenderAfbeeldingen/GebiedMaken.png" class="img-fluid w-100 mb-4" alt="gebouw">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="BlenderModal3" tabindex="-1" aria-labelledby="BlenderModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="BlenderModal3Label">Skelet model</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sluiten"></button>
+            </div>
+            <div class="modal-body">
+              <img src="BlenderAfbeeldingen/Skelet1.png" class="img-fluid w-100 mb-4" alt="skelet">
+              <img src="BlenderAfbeeldingen/Skelet2.png" class="img-fluid w-100 mb-4" alt="skelet2">
+              <p class="mb-4">Dit skelet heb ik gemaakt voor een project in het 3de leerjaar.
+                Ik heb geprobeerd een skelet na te maken, daarna heb ik het volledig gerigged waardoor ik er een animatie bij kon maken</p>
+              <img src="BlenderAfbeeldingen/JumpScareSkelet.gif" class="img-fluid w-100 mb-4" alt="skeletgif">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="BlenderModal4" tabindex="-1" aria-labelledby="BlenderModal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="BlenderModal4Label">Kanon model</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sluiten"></button>
+            </div>
+            <div class="modal-body">
+              <img src="BlenderAfbeeldingen/Kanon1.png" class="img-fluid w-100 mb-4" alt="Kanon1">
+              <img src="BlenderAfbeeldingen/Kanon2.png" class="img-fluid w-100 mb-4" alt="Kanon2">
+              <p class="mb-4">Dit kanon was onderdeel van het zelfde project als het schip. Dit kanon werd in het schip geplaatst en gebruikt in het spel.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="modal fade" id="BlenderModal5" tabindex="-1" aria-labelledby="BlenderModal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="BlenderModal5Label">Pokémon model namaken</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sluiten"></button>
+            </div>
+            <div class="modal-body">
+              <img src="BlenderAfbeeldingen/Pokemon1.png" class="img-fluid w-100 mb-4" alt="pokemon1">
+              <img src="BlenderAfbeeldingen/Pokemon2.png" class="img-fluid w-100 mb-4" alt="pokemon2">
+              <p class="mb-4">In leerjaar 2 kregen wij een opdracht om een personge na te maken, ik heb er toen voor gekozen om een Pokémon te modelleren.
+                Ik was terwijl we deze opdracht kregen al bezig met het leren van Blender bij het keuzedeel verdieping software, 
+                dus ik had al wat ervaring met het programma. Ik heb er toen voor gekozen om een Pokémon na te maken namelijk de Pokémon Empoleon (hieronder te zien hoe die eruitziet).
+                Het is niet helemaal perfect geworden, vooral de textures omdat het gewoon simpele materialen zijn, maar ik ben er wel tevreden mee met de ervaring die ik toen had.
+              </p>
+              <img src="BlenderAfbeeldingen/Empoleon.png" class="img-fluid w-100 mb-4" alt="pokemonvoorbeeld">
             </div>
           </div>
         </div>
