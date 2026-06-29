@@ -82,6 +82,15 @@
             </div>
           </div>
         </div>
+        <div class="col d-flex">
+          <div class="card shadow-sm w-100">
+            <img src="StageCard.png" class="card-img-top" alt="Stage project">
+            <div class="card-body text-center">
+              <h4 class="card-title">Stageopdracht</h4>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#StageProjectModal">Lees meer</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -108,7 +117,7 @@
           <div class="card shadow-sm w-100">
             <img src="BlenderAfbeeldingen/Omgeving1.png" class="card-img-top" alt="Blender project 2">
             <div class="card-body text-center">
-              <h4 class="card-title">Omgeving namaken</h4>
+              <h4 class="card-title">Omgeving namaken stageopdracht</h4>
               <button type="button" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#BlenderModal2">Lees meer</button>
             </div>
           </div>
@@ -223,6 +232,31 @@
         </div>
       </div>
 
+      <div class="modal fade" id="StageProjectModal" tabindex="-1" aria-labelledby="StageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="StageModalLabel">Stageopdracht</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sluiten"></button>
+            </div>
+            <div class="modal-body">
+              <img src="StageCard.png" class="img-fluid w-100 mb-4" alt="omgeving">
+              <p class="mb-4">Voor een eerdere stage kreeg ik mijn eigen opdracht. 
+                Ik moest namelijk een digitale omgeving bouwen waar je doorheen kon rijden met een auto.
+                Tijdens het rondrijden kon je schermen tegenkomen die verschillende dingen lieten zien, zoals een video of een afbeelding.
+                De content die werd getoond op de schermen staan in verschillende folders, zodat je makkelijk kunt wisselen tussen de verschillende content.
+                Je kunt ook tijdens dat het programma draait de content veranderen door per scherm een andere folder te selecteren (zie afbeelding hieronder) of door content in de folder aan te passen door er iets nieuws in te plaatsen of te verwijderen.
+              </p>
+              <img src="SchermBeheren.png" class="img-fluid w-100 mb-4" alt="Folders">
+              <p class="mb-4">Hieronder nog een video van hoe het rondrijden ongeveer werkt. Het werkt met een stuurtje en pedalen, zoals te zien is in de video.
+                De video is niet van het eindproduct, maar deze heb ik op het moment gemaakt toen ik er nog mee bezig was, maar zo krijg je wel een beetje een idee van hoe het werkt.
+              </p>
+              <img src="Rijden.gif" class="img-fluid w-100 mb-4" alt="Folders">
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="modal fade" id="BlenderModal1" tabindex="-1" aria-labelledby="BlenderModal1Label" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
@@ -256,9 +290,11 @@
               <img src="BlenderAfbeeldingen/Omgeving1.png" class="img-fluid w-100 mb-4" alt="omgeving1">
               <img src="BlenderAfbeeldingen/Omgeving2.png" class="img-fluid w-100 mb-4" alt="omgeving2">
               <img src="BlenderAfbeeldingen/Gebouw.png" class="img-fluid w-100 mb-4" alt="gebouw">
-              <p class="mb-4">Voor een eerdere stage heb ik een omgeving nagebouwd die gebaseerd is op een echte locatie. 
+              <p class="mb-4">Voor een eerdere stage heb ik een omgeving nagebouwd die gebaseerd is op een echte locatie. (Deze opdracht hoort ook bij de stageopdracht die bij de Unity en C# projecten staat).
+                Ik wilde dit eerst met een ander programma doen en met een andere methode. Ik wilde het namelijk doen door een locatie in te scannen met een 360 graden camera en daarna de scan te gebruiken om een 3D model te maken.
+                Na een lange tijd te hebben geprobeerd met die methode, kwam ik erachter dat het niet zo goed werkte en dat het te veel tijd kostte. Daarom had ik zelf de knoop door gehakt en besloten om de omgeving maar na te maken in Blender.
                 Het gebied dat ik na wilde maken is te zien in de afbeelding hieronder.</h4>
-                <img src="BlenderAfbeeldingen/GebiedMaken.png" class="img-fluid w-100 mb-4" alt="gebouw">
+                <img src="BlenderAfbeeldingen/GebiedMaken.png" class="img-fluid w-100 mt-4 mb-4" alt="gebouw">
             </div>
           </div>
         </div>
